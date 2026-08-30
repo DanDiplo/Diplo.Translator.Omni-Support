@@ -1,0 +1,30 @@
+title: ""
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask a setup, configuration, or usage question. Discussions are public, so remove credentials, personal data, customer content, and confidential information.
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Include the Diplo Translator Omni and Umbraco versions when relevant.
+      placeholder: Omni version; Umbraco version
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Explain what you are trying to achieve and where you are stuck.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Sanitised context
+      description: Include configuration excerpts, logs, or screenshots only after removing private information.
+    validations:
+      required: false
+

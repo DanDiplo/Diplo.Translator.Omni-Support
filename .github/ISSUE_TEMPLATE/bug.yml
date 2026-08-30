@@ -1,0 +1,103 @@
+name: Bug report
+description: Report a reproducible problem with Diplo Translator Omni
+title: "[Bug]: "
+labels:
+  - bug
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Issues and their attachments are public. Remove credentials, personal data, customer content, private URLs, and confidential logs before submitting.
+
+        For setup questions and general troubleshooting, please use Discussions instead.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and discussions for the same problem.
+          required: true
+        - label: I have removed secrets, personal data, customer content, and confidential information.
+          required: true
+        - label: This is not a security vulnerability. Security vulnerabilities must be reported privately through the Security area.
+          required: true
+  - type: input
+    id: omni-version
+    attributes:
+      label: Diplo Translator Omni version
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: umbraco-version
+    attributes:
+      label: Umbraco version
+      placeholder: e.g. 17.x
+    validations:
+      required: true
+  - type: input
+    id: dotnet-version
+    attributes:
+      label: .NET version
+      placeholder: Output of dotnet --version
+    validations:
+      required: true
+  - type: input
+    id: provider
+    attributes:
+      label: Translation provider and model
+      description: Do not include API keys or provider credentials.
+      placeholder: e.g. Umbraco.AI provider and model name
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Dictionary translation
+        - Page translation
+        - Page and descendants translation
+        - Translation Coverage
+        - Source changes
+        - Translation jobs
+        - Glossary
+        - Installation or configuration
+        - Backoffice user interface
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Give a clear description of the problem and its impact.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest repeatable sequence you can.
+      placeholder: |
+        1. Configure...
+        2. Open...
+        3. Select...
+        4. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Sanitised logs, screenshots, or additional context
+      description: Drag files here if useful. Check them carefully for private information first.
+    validations:
+      required: false
+
