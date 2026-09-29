@@ -1,7 +1,7 @@
 # Diplo Translator Omni Support
 
-This is the public support repository for **Diplo Translator Omni for Umbraco**.
-It contains support resources and public issue tracking only. The product source code is maintained in a separate private repository and is not published here.
+This is the public support repository for **[Diplo Translator Omni for Umbraco](https://translator.diplo.co.uk/)** - an AI powered translation package for Umbraco CMS.
+It contains support resources and public issue tracking only.
 
 ## Get help
 
@@ -28,3 +28,5 @@ Sanitised excerpts that reproduce the problem are welcome. If sensitive material
 Issues are intended for actionable, reproducible defects and documentation problems. Questions, troubleshooting conversations, and early feature ideas belong in Discussions.
 
 Submitting an issue does not grant access to the private source repository, create a service-level agreement, or guarantee that a requested change will be implemented.
+
+The product source code is maintained in a separate private repository and is not published here.
